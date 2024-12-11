@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* for mobile */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+    align-items: center;
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 16px;
+    padding: 12px;
+    background-color: hsl(0, 0%, 12%);
+    margin-bottom: 20px;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    width: 90px;
+    height: 90px;
+}
+
+#name {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+#loc {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    color:  hsl(75, 94%, 57%);
+}
+
+#bio {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    max-width: 500px;
+    width: 90%;
+    margin-bottom: 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: hsl(75, 94%, 57%);
+    transform: scale(1.1);
+}
+
+.icon {
+    width: 20px;
+    position: absolute;
+    left: 10px;
+}
+
+.btn:hover .icon{
+    filter: brightness(0)invert(1);
+}
+
+footer{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 8px;
+    color: hsl(0, 0%, 100%);
+}
+
+footer a:active {
+    color: hsl(0, 0%, 100%);
+}
+
+footer a:hover{
+    color: hsl(75, 94%, 57%);
+}
+
+footer a:visited{
+    color: rgb(167, 60, 60);
+}
+
+/* for desktop */
+@media only screen and (min-width: 1024px){
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container {
+        width: 30%;
+        max-width: 1000px;
+        padding: 40px;
+        margin-top: 50px;
+        border-radius: 25px;
+        margin-bottom: 50px;
+
+    }
+
+    #profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    
+    footer{
+        font-size: 10px;
+    }
+
+}

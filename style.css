@@ -16,6 +16,7 @@ body{
     background-color: hsl(0, 0%, 8%);
 }
 
+/* mobile */
 .container {
     align-items: center;
     width: 20rem;
@@ -118,4 +119,59 @@ footer a:hover{
 
 footer a:visited{
     color: rgb(167, 60, 60);
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .container {
+        width: 40rem; /* Increase width for desktop screens */
+        padding: 40px; /* Add more padding for spacing */
+    }
+
+    #profile-pic {
+        width: 120px; /* Larger profile picture */
+        height: 120px;
+    }
+
+    #name {
+        font-size: 32px; /* Larger font size for name */
+    }
+
+    #loc, #bio {
+        font-size: 16px; /* Slightly larger text for readability */
+    }
+
+    .btn {
+        height: 60px; /* Slightly taller buttons */
+        font-size: 16px; /* Larger button text */
+    }
+
+    footer {
+        font-size: 10px; /* Adjust footer size */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 50rem;
+        padding: 50px;
+    }
+
+    #profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    #name {
+        font-size: 36px;
+    }
+
+    #loc, #bio {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 18px;
+        height: 65px;
+    }
 }

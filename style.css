@@ -6,7 +6,6 @@
     padding: 0;
 }
 
-/* for mobile */
 body{
     display: flex;
     flex-direction: column;
@@ -119,27 +118,4 @@ footer a:hover{
 
 footer a:visited{
     color: rgb(167, 60, 60);
-}
-
-/* for desktop */
-@media only screen and (min-width: 1024px){
-    .container {
-        width: 30%;
-        max-width: 1000px;
-        padding: 40px;
-        margin-top: 50px;
-        border-radius: 25px;
-        margin-bottom: 50px;
-
-    }
-
-    #profile-pic {
-        width: 100px;
-        height: 100px;
-    }
-    
-    footer{
-        font-size: 10px;
-    }
-
 }
